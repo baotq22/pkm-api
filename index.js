@@ -33,7 +33,7 @@ const loadPokemonData = async () => {
         pokemon.Type1.toLowerCase(),
         pokemon.Type2 ? pokemon.Type2.toLowerCase() : null
       ].filter(Boolean),
-      url: `http://localhost:5000/images/${index + 1}.png`
+      url: `https://pkm-api.onrender.com/images/${index + 1}.png`
     }));
     console.log("Pokemon data loaded successfully.");
   } catch (error) {
